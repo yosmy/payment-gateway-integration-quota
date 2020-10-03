@@ -1,0 +1,606 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "a22dcc900849d313d6c4cde42a7602fa",
+    "packages": [
+        {
+            "name": "composer/package-versions-deprecated",
+            "version": "1.11.99.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/package-versions-deprecated.git",
+                "reference": "7413f0b55a051e89485c5cb9f765fe24bb02a7b6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/package-versions-deprecated/zipball/7413f0b55a051e89485c5cb9f765fe24bb02a7b6",
+                "reference": "7413f0b55a051e89485c5cb9f765fe24bb02a7b6",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.1.0 || ^2.0",
+                "php": "^7 || ^8"
+            },
+            "replace": {
+                "ocramius/package-versions": "1.11.99"
+            },
+            "require-dev": {
+                "composer/composer": "^1.9.3 || ^2.0@dev",
+                "ext-zip": "^1.13",
+                "phpunit/phpunit": "^6.5 || ^7"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "PackageVersions\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "PackageVersions\\": "src/PackageVersions"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Marco Pivetta",
+                    "email": "ocramius@gmail.com"
+                },
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be"
+                }
+            ],
+            "description": "Composer plugin that provides efficient querying for installed package versions (no runtime IO)",
+            "funding": [
+                {
+                    "url": "https://packagist.com",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/composer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/composer/composer",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-11-11T10:22:58+00:00"
+        },
+        {
+            "name": "jean85/pretty-package-versions",
+            "version": "1.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Jean85/pretty-package-versions.git",
+                "reference": "a917488320c20057da87f67d0d40543dd9427f7a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Jean85/pretty-package-versions/zipball/a917488320c20057da87f67d0d40543dd9427f7a",
+                "reference": "a917488320c20057da87f67d0d40543dd9427f7a",
+                "shasum": ""
+            },
+            "require": {
+                "composer/package-versions-deprecated": "^1.8.0",
+                "php": "^7.0|^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.0|^8.5|^9.2"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jean85\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alessandro Lai",
+                    "email": "alessandro.lai85@gmail.com"
+                }
+            ],
+            "description": "A wrapper for ocramius/package-versions to get pretty versions strings",
+            "keywords": [
+                "composer",
+                "package",
+                "release",
+                "versions"
+            ],
+            "time": "2020-09-14T08:43:34+00:00"
+        },
+        {
+            "name": "mongodb/mongodb",
+            "version": "1.8.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mongodb/mongo-php-library.git",
+                "reference": "953dbc19443aa9314c44b7217a16873347e6840d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mongodb/mongo-php-library/zipball/953dbc19443aa9314c44b7217a16873347e6840d",
+                "reference": "953dbc19443aa9314c44b7217a16873347e6840d",
+                "shasum": ""
+            },
+            "require": {
+                "ext-hash": "*",
+                "ext-json": "*",
+                "ext-mongodb": "^1.8.1",
+                "jean85/pretty-package-versions": "^1.2",
+                "php": "^7.0 || ^8.0",
+                "symfony/polyfill-php80": "^1.19"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "^3.5, <3.5.5",
+                "symfony/phpunit-bridge": "5.x-dev"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.8.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "MongoDB\\": "src/"
+                },
+                "files": [
+                    "src/functions.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "Apache-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Andreas Braun",
+                    "email": "andreas.braun@mongodb.com"
+                },
+                {
+                    "name": "Jeremy Mikola",
+                    "email": "jmikola@gmail.com"
+                }
+            ],
+            "description": "MongoDB driver library",
+            "homepage": "https://jira.mongodb.org/browse/PHPLIB",
+            "keywords": [
+                "database",
+                "driver",
+                "mongodb",
+                "persistence"
+            ],
+            "time": "2020-11-25T12:26:02+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php80",
+            "version": "v1.20.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php80.git",
+                "reference": "e70aa8b064c5b72d3df2abd5ab1e90464ad009de"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/e70aa8b064c5b72d3df2abd5ab1e90464ad009de",
+                "reference": "e70aa8b064c5b72d3df2abd5ab1e90464ad009de",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "1.20-dev"
+                },
+                "thanks": {
+                    "name": "symfony/polyfill",
+                    "url": "https://github.com/symfony/polyfill"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php80\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ],
+                "classmap": [
+                    "Resources/stubs"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ion Bazan",
+                    "email": "ion.bazan@gmail.com"
+                },
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 8.0+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-10-23T14:02:19+00:00"
+        },
+        {
+            "name": "yosmy/event",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yosmy/event.git",
+                "reference": "447a7ce6938858b6d5536d836f946eb507c7a6b2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yosmy/event/zipball/447a7ce6938858b6d5536d836f946eb507c7a6b2",
+                "reference": "447a7ce6938858b6d5536d836f946eb507c7a6b2",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2",
+                "yosmy/mongo": "@dev"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yosmy\\": [
+                        "src"
+                    ]
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yosmany Garcia",
+                    "email": "yosmanyga@gmail.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/yosmy/event/tree/master",
+                "issues": "https://github.com/yosmy/event/issues"
+            },
+            "time": "2020-12-22T17:53:51+00:00"
+        },
+        {
+            "name": "yosmy/mongo",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yosmy/mongo.git",
+                "reference": "019ee8c10ede64df396e384ec6b5f7bc8ebe3977"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yosmy/mongo/zipball/019ee8c10ede64df396e384ec6b5f7bc8ebe3977",
+                "reference": "019ee8c10ede64df396e384ec6b5f7bc8ebe3977",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "ext-mongodb": "*",
+                "mongodb/mongodb": "~1",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yosmy\\Mongo\\": [
+                        "src"
+                    ]
+                }
+            },
+            "support": {
+                "source": "https://github.com/yosmy/mongo/tree/master",
+                "issues": "https://github.com/yosmy/mongo/issues"
+            },
+            "time": "2020-12-18T18:09:40+00:00"
+        },
+        {
+            "name": "yosmy/payment-gateway",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yosmy/payment-gateway.git",
+                "reference": "78cc445615900d480ece2c9216374de08d90d74b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yosmy/payment-gateway/zipball/78cc445615900d480ece2c9216374de08d90d74b",
+                "reference": "78cc445615900d480ece2c9216374de08d90d74b",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yosmy\\Payment\\Gateway\\": [
+                        "src/card",
+                        "src/charge",
+                        "src/customer",
+                        "src/exception",
+                        "src/util"
+                    ]
+                }
+            },
+            "support": {
+                "source": "https://github.com/yosmy/payment-gateway/tree/master",
+                "issues": "https://github.com/yosmy/payment-gateway/issues"
+            },
+            "time": "2020-12-10T18:41:00+00:00"
+        },
+        {
+            "name": "yosmy/payment-gateway-integration",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yosmy/payment-gateway-integration.git",
+                "reference": "d1c701d4bb4073652dbafddb8185f74d0c43356c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yosmy/payment-gateway-integration/zipball/d1c701d4bb4073652dbafddb8185f74d0c43356c",
+                "reference": "d1c701d4bb4073652dbafddb8185f74d0c43356c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.2",
+                "yosmy/mongo": "@dev",
+                "yosmy/payment-gateway": "@dev",
+                "yosmy/relation": "@dev"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9",
+                "symfony/debug": "~4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yosmy\\Payment\\": [
+                        "src/card",
+                        "src/charge",
+                        "src/customer",
+                        "src/exception"
+                    ]
+                },
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Yosmy\\Payment\\Test\\": [
+                        "tests/customer"
+                    ]
+                }
+            },
+            "support": {
+                "source": "https://github.com/yosmy/payment-gateway-integration/tree/master",
+                "issues": "https://github.com/yosmy/payment-gateway-integration/issues"
+            },
+            "time": "2020-12-18T23:16:58+00:00"
+        },
+        {
+            "name": "yosmy/relation",
+            "version": "dev-main",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/yosmy/relation.git",
+                "reference": "97ab7b5d747bda7f6bec96c472d56efe5a97aac8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/yosmy/relation/zipball/97ab7b5d747bda7f6bec96c472d56efe5a97aac8",
+                "reference": "97ab7b5d747bda7f6bec96c472d56efe5a97aac8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.2"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Yosmy\\": [
+                        "src"
+                    ]
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Yosmany Garcia",
+                    "email": "yosmanyga@gmail.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/yosmy/relation/tree/main",
+                "issues": "https://github.com/yosmy/relation/issues"
+            },
+            "time": "2020-12-11T05:52:05+00:00"
+        }
+    ],
+    "packages-dev": [
+        {
+            "name": "psr/log",
+            "version": "1.1.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/0f73288fd15629204f9d42b7055f72dacbe811fc",
+                "reference": "0f73288fd15629204f9d42b7055f72dacbe811fc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Log\\": "Psr/Log/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for logging libraries",
+            "homepage": "https://github.com/php-fig/log",
+            "keywords": [
+                "log",
+                "psr",
+                "psr-3"
+            ],
+            "time": "2020-03-23T09:12:05+00:00"
+        },
+        {
+            "name": "symfony/debug",
+            "version": "v4.4.18",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/debug.git",
+                "reference": "5dfc7825f3bfe9bb74b23d8b8ce0e0894e32b544"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/debug/zipball/5dfc7825f3bfe9bb74b23d8b8ce0e0894e32b544",
+                "reference": "5dfc7825f3bfe9bb74b23d8b8ce0e0894e32b544",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.1.3",
+                "psr/log": "~1.0",
+                "symfony/polyfill-php80": "^1.15"
+            },
+            "conflict": {
+                "symfony/http-kernel": "<3.4"
+            },
+            "require-dev": {
+                "symfony/http-kernel": "^3.4|^4.0|^5.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Debug\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Debug Component",
+            "homepage": "https://symfony.com",
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-12-10T16:34:26+00:00"
+        }
+    ],
+    "aliases": [],
+    "minimum-stability": "dev",
+    "stability-flags": {
+        "yosmy/mongo": 20,
+        "yosmy/event": 20,
+        "yosmy/payment-gateway-integration": 20
+    },
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=7.2"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
+}

@@ -1,0 +1,28 @@
+{
+    "name": "yosmy/payment-gateway-integration-quota",
+    "description": "",
+    "require": {
+        "php": ">=7.2",
+        "yosmy/mongo": "@dev",
+        "yosmy/event": "@dev",
+        "yosmy/payment-gateway-integration": "@dev"
+    },
+    "require-dev": {
+        "symfony/debug": "~4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Yosmy\\Payment\\": [
+                "src"
+            ]
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://php.yosmy.com"
+        }
+    ],
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
